@@ -55,7 +55,26 @@ body{
     list-style: none;
 }
 .navbar__item{
-    height: 80px;
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    height: 30px;
+    
+    
+   
+}
+
+#button{
+    background-color: #fff;
+    margin-right: 20px;
+    
+}
+
+#home{
+    color: #000;
 }
 .navbar__links{
     color:#fff;
@@ -64,19 +83,23 @@ body{
     justify-content: space-evenly;
     width: 160px;
     text-decoration: none;
-    height: 80px;
+    height: 30px;
     transition:all 0.3 ease;
     
 }
 
 
-.navbar__links:hover {
-    color: rgb(0, 0, 0);
+.navbar__item:hover {
+    
     background-color: #fff;
-    
-    
+       
     transition:all 0.3 ease;
 }
+.navbar__links:hover {
+    color:#000;
+}
+
+
 
 @media screen and (max-width: 960px) {
     .navbar__container{
@@ -220,7 +243,8 @@ body{
     
     font-size: 42px;
     padding-top: 30px;
-    padding-left: 450px;
+    align-items: center;
+    text-align: center;
 
 }
 
@@ -230,8 +254,8 @@ body{
     align-items: center;
     font-size: 20px;
     font-family: 'Radley', serif;
-    padding-top: 40px;
-    padding-bottom: 130px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     padding-left: 120px;
     padding-right: 100px;
 
@@ -239,7 +263,7 @@ body{
 
 
 
-/*guil container*/
+/*guild container*/
 
 .guild__container{
     display: flex;
@@ -273,21 +297,229 @@ body{
 .grid__main__container{
     
     display: grid;
-    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    padding-left: 60px;
+    padding-bottom: 50px;   
 
 }
 
+/*grid 1*/
 .grid__container--1{
     display: flex;
+    flex-direction: column;    
+    align-items:center;
+    height: 450px;
+    width: 350px;
+    
+
+        
+}
+
+
+.grid__container--1 img{
+    
+    padding: 30px;
+        
+}
+
+.grid__container--1 h3 a{
+    
+    font-family: 'Radley', serif;
+    font-size: 26px;
+    color: #0468E0;
+}
+
+.para__container--grid1{
+    margin-top: 51px;
+    text-align: center;
     align-items: center;
+    font-size: 18px;
+    font-family: 'Radley', serif;
+}
+
+
+
+
+/*grid 2**/
+
+.grid__container--2{
+    display: flex;
+    flex-direction: column;    
+    align-items:center;
+    height: 450px;
+    width: 350px;
+    
+        
+}
+
+
+.grid__container--2 img{
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+        
+}
+
+.grid__container--2 h3 a{
+    
+    font-family: 'Radley', serif;
+    font-size: 26px;
+    color: #0468E0;
+}
+
+.para__container--grid2{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Radley', serif;
+}
+
+
+/*grid 3 */
+
+
+.grid__container--3{
+    display: flex;
+    flex-direction: column;    
+    align-items:center;
+    height: 450px;
+    width: 350px;
+    
+        
+}
+
+
+.grid__container--3 img{
+    
+    padding-top: 30px;
+    margin-bottom: 34px;
     
 }
 
+.grid__container--3 h3 a{
+    
+    font-family: 'Radley', serif;
+    font-size: 26px;
+    color: #0468E0;
+}
+.para__container--grid3{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Radley', serif;
+}
 
 
 
+/*footer*/
 
+.footer__container{
+    background-color: #C4C4C4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
 
+}
 
+/*right__grid*/
 
+.right__grid{
+    
+    
+    
+    
+}
 
+.right__line{
+    
+    height: 2px;
+    width: 450px;
+    border-radius: 1px;
+    background-color: black;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.footer__text{
+    display: flex;
+    align-items: center;
+    margin-top: 130px;
+    justify-content: center;
+
+}
+
+.footer__text h2{
+    font-family: 'Radley', serif;
+    font-size: 2opx;
+}
+
+.footer__text p{
+    color: #888484 ;
+    padding-left: 7px;
+}
+
+.footer__text h3{
+    font-size: 17px;
+
+}
+
+/*center__container*/
+
+.center__container{
+
+    
+}
+
+.center h1{
+    font-family:'Radley', serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.social__items {
+   
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 8px;
+   
+}
+
+/*left__grid*/
+
+.left__grid{
+
+}
+
+.left__line{
+    height: 2px;
+    width: 450px;
+    border-radius: 1px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.about__container{
+
+    text-align: center;
+    align-items: center;
+}
+
+.about__container h3{
+
+    font-size: 15px;
+    font-family: 'Radley',serif;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.about__container p{
+
+    font-size: 13px;
+    font-family: 'Radley',serif;
+}
